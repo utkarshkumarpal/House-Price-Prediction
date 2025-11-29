@@ -13,14 +13,14 @@ This project aims to build a predictive model that estimates the price of reside
 ## 🔍 Dataset
 
 - **Bengaluru_House_Data.csv**: Raw dataset containing housing data.
-- **Cleaned_Data.csv**: Preprocessed dataset used for training and prediction.
+- **final_housing_data.csv**: Preprocessed dataset used for training and prediction.
 
 ---
 
 ## 🧠 Model
 
 - **Algorithm Used**: Linear Regression
-- **Trained Model File**: `House_prediction.model.pkl`  
+- **Trained Model File**: `house_ridge_model.pkl`  
 - Input features:
   - Location
   - Total Square Feet
@@ -37,5 +37,5 @@ An interactive web interface built with Streamlit to input house features and ge
 To run the app:
 
 ```bash
-streamlit run app.py
+streamlit run ridge_app.py
 ****
