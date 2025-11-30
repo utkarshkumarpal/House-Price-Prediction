@@ -4,13 +4,13 @@ import streamlit as st
 import pickle as pk
 
 
-model = pk.load(open(r'C:\Users\Utkarsh kumar\Desktop\Abes\project_made\House_Price_Prediction\house_ridge_model.pkl', 'rb'))
+model = pk.load(open(r'house_ridge_model.pkl', 'rb'))
 
 
 st.header('🏠 Real Estate House Price Prediction - Bangalore')
 
 
-data = pd.read_csv(r'C:\Users\Utkarsh kumar\Desktop\Abes\project_made\House_Price_Prediction\Final_housing_data.csv')
+data = pd.read_csv('Final_housing_data.csv')
 
 
 locate = st.selectbox('📍 Choose the Location', data['location'].unique())
